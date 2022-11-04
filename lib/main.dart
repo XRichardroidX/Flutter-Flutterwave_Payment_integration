@@ -11,9 +11,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Standard Demo',
+      title: 'Zuhra Hashimi Project',
       debugShowCheckedModeBanner: false,
-      home: MyHomePage('Deviga to Flutterwave'),
+      home: MyHomePage('Zuhra Hashimi to Flutterwave'),
     );
   }
 }
@@ -62,12 +62,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: TextFormField(
                   controller: this.NameController,
                   textInputAction: TextInputAction.next,
+                  keyboardType: TextInputType.text,
                   style: TextStyle(color: Colors.black),
-                  readOnly: true,
-                  onTap: this._openBottomSheet,
-                  decoration: InputDecoration(
-                    hintText: "Full Name",
-                  ),
+                  decoration: InputDecoration(hintText: "Full Name"),
                   validator: (value) =>
                   value!.isNotEmpty ? null : "Full Name is required",
                 ),
@@ -170,7 +167,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   _handlePaymentInitialization() async {
     final style = FlutterwaveStyle(
-      appBarText: "Devigma to Flutterwave",
+      appBarText: "",
       buttonColor: Color(0xff000000),
       buttonTextStyle: TextStyle(
         color: Colors.deepOrangeAccent,
@@ -214,8 +211,8 @@ class _MyHomePageState extends State<MyHomePage> {
     final Flutterwave flutterwave = Flutterwave(
         context: context,
         style: style,
-        customization: Customization(title: "Devigma's Payment"),
-        publicKey: "FLWPUBK_TEST-ebdb992444b5b047b6161173b2b19bd6-X",
+        customization: Customization(title: "Zuhra Hashimi Payment"),
+        publicKey: "FLWPUBK-061df4e42737c8f7b788b38f40fd1940-X",
         currency: this.selectedCurrency,
         redirectUrl: "https://google.com",
         txRef: Uuid().v1(),

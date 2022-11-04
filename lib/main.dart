@@ -167,7 +167,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   _handlePaymentInitialization() async {
     final style = FlutterwaveStyle(
-      appBarText: "",
+      appBarText: "Zuhra Hashimi Project",
       buttonColor: Color(0xff000000),
       buttonTextStyle: TextStyle(
         color: Colors.deepOrangeAccent,
